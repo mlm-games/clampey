@@ -1,0 +1,72 @@
+[
+  {
+    "input": "Cat",
+    "normalized": "cat",
+    "prefix": "ca"
+  },
+  {
+    "input": "  Thumbs   Up ",
+    "normalized": "thumbs up",
+    "prefix": "th"
+  },
+  {
+    "input": "a",
+    "normalized": "a",
+    "prefix": "a_"
+  },
+  {
+    "input": "C++",
+    "normalized": "c++",
+    "prefix": "c_"
+  },
+  {
+    "input": "hello.world",
+    "normalized": "helloworld",
+    "prefix": "he"
+  },
+  {
+    "input": "Rock & Roll",
+    "normalized": "rock roll",
+    "prefix": "ro"
+  },
+  {
+    "input": "#mood",
+    "normalized": "#mood",
+    "prefix": "mo"
+  },
+  {
+    "input": "Ünïcode",
+    "normalized": "ünïcode",
+    "prefix": "nc"
+  },
+  {
+    "input": "猫",
+    "normalized": "猫",
+    "prefix": "__"
+  },
+  {
+    "input": "",
+    "normalized": "",
+    "prefix": "__"
+  },
+  {
+    "input": "   ",
+    "normalized": "",
+    "prefix": "__"
+  },
+  {
+    "input": "snake_case",
+    "normalized": "snake_case",
+    "prefix": "sn"
+  },
+  {
+    "input": "5 stars",
+    "normalized": "5 stars",
+    "prefix": "5s"
+  },
+  {
+    "input": "a-b",
+    "normalized": "a-b",
+    "prefix": "ab"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "prefix": "ye",
+  "items": [
+    {
+      "id": "thumbs-yes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/thumbs-yes.gif",
+      "preview_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/thumbs-yes.gif/240px-thumbs-yes.gif",
+      "width": 320,
+      "height": 240,
+      "size": 184320,
+      "mime": "image/gif",
+      "duration_ms": 1200,
+      "title": "Thumbs up",
+      "tags": [
+        "thumbs up",
+        "yes"
+      ],
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Thumbs up — Fixture Author (cc0) — https://commons.wikimedia.org/wiki/File:thumbs-yes.gif",
+      "author": "Fixture Author",
+      "author_url": null,
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:thumbs-yes.gif",
+      "provider": "wikimedia-commons",
+      "sha256": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "score": 0.5
+    }
+  ]
+}

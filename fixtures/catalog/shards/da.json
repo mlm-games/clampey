@@ -1,0 +1,57 @@
+{
+  "prefix": "da",
+  "items": [
+    {
+      "id": "dog-dance",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/dog-dance.gif",
+      "preview_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/dog-dance.gif/240px-dog-dance.gif",
+      "width": 320,
+      "height": 240,
+      "size": 184320,
+      "mime": "image/gif",
+      "duration_ms": 1200,
+      "title": "Dog dancing",
+      "tags": [
+        "dog",
+        "dance"
+      ],
+      "license": "cc-by-4.0",
+      "license_url": "https://creativecommons.org/licenses/cc-by-4.0/",
+      "attribution": "Dog dancing — Fixture Author (cc-by-4.0) — https://commons.wikimedia.org/wiki/File:dog-dance.gif",
+      "author": "Fixture Author",
+      "author_url": null,
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:dog-dance.gif",
+      "provider": "wikimedia-commons",
+      "sha256": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "score": 0.5
+    },
+    {
+      "id": "cat-both",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/cat-both.gif",
+      "preview_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/cat-both.gif/240px-cat-both.gif",
+      "width": 320,
+      "height": 240,
+      "size": 184320,
+      "mime": "image/gif",
+      "duration_ms": 1200,
+      "title": "Dancing cat",
+      "tags": [
+        "cat",
+        "dance"
+      ],
+      "license": "cc-by-sa-3.0",
+      "license_url": "https://creativecommons.org/licenses/cc-by-sa-3.0/",
+      "attribution": "Dancing cat — Fixture Author (cc-by-sa-3.0) — https://commons.wikimedia.org/wiki/File:cat-both.gif",
+      "author": "Fixture Author",
+      "author_url": null,
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:cat-both.gif",
+      "provider": "wikimedia-commons",
+      "sha256": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "score": 0.6
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[package]
+name = "clampey"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+license = "MIT"
+description = "Offline-first search engine for open-licensed GIF catalogs"
+readme = "README.md"
+keywords = ["gif", "search", "catalog", "creative-commons", "wasm"]
+categories = ["multimedia::images", "wasm", "text-processing"]
+
+[lib]
+name = "clampey"
+path = "src/lib.rs"
+
+[[bin]]
+name = "clampey"
+path = "src/bin/clampey.rs"
+required-features = ["cli"]
+
+[features]
+default = []
+reqwest = ["dep:reqwest"]
+wasm = ["dep:wasm-bindgen", "dep:serde-wasm-bindgen"]
+cli = ["reqwest", "dep:anyhow", "dep:clap", "dep:tokio"]
+
+[dependencies]
+async-trait = "0.1"
+futures-util = { version = "0.3", default-features = false, features = ["std"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+url = "2"
+
+reqwest = { version = "0.12", optional = true, default-features = false, features = ["rustls-tls", "gzip"] }
+wasm-bindgen = { version = "0.2", optional = true }
+serde-wasm-bindgen = { version = "0.6", optional = true }
+
+anyhow = { version = "1", optional = true }
+clap = { version = "4", optional = true, features = ["derive"] }
+tokio = { version = "1", optional = true, features = ["rt", "macros"] }
+
+[dev-dependencies]
+futures = "0.3"
+pretty_assertions = "1"
+serde = { version = "1", features = ["derive"] }

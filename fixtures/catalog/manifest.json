@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_version": "2026-01-01",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "item_count": 6,
+  "shard_count": 7,
+  "shard_by": "tag_prefix_2",
+  "shards": [
+    {
+      "prefix": "ca",
+      "path": "shards/ca.json",
+      "item_count": 4,
+      "bytes": 3836
+    },
+    {
+      "prefix": "da",
+      "path": "shards/da.json",
+      "item_count": 2,
+      "bytes": 1951
+    },
+    {
+      "prefix": "do",
+      "path": "shards/do.json",
+      "item_count": 1,
+      "bytes": 993
+    },
+    {
+      "prefix": "he",
+      "path": "shards/he.json",
+      "item_count": 1,
+      "bytes": 1010
+    },
+    {
+      "prefix": "th",
+      "path": "shards/th.json",
+      "item_count": 1,
+      "bytes": 990
+    },
+    {
+      "prefix": "wa",
+      "path": "shards/wa.json",
+      "item_count": 1,
+      "bytes": 1010
+    },
+    {
+      "prefix": "ye",
+      "path": "shards/ye.json",
+      "item_count": 1,
+      "bytes": 990
+    }
+  ],
+  "tags_index_path": "tags.json",
+  "hosts_path": "hosts.json",
+  "base_url_hint": "https://example.github.io/clampey/",
+  "license_note": "Each item keeps its original license; display attribution where required.",
+  "min_client_features": [
+    "configurable_base_url",
+    "show_attribution",
+    "host_allowlist"
+  ]
+}
