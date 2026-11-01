@@ -6,6 +6,8 @@ rust-version = "1.88"
 license = "MIT"
 description = "Offline-first search engine for open-licensed GIF catalogs"
 readme = "README.md"
+repository = "https://github.com/mlm-games/clampey"
+documentation = "https://docs.rs/clampey"
 keywords = ["gif", "search", "catalog", "creative-commons", "wasm"]
 categories = ["multimedia::images", "wasm", "text-processing"]
 
