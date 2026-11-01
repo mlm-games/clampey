@@ -110,3 +110,10 @@ fn exposes_the_manifest() {
     assert_eq!(manifest.item_count, 6);
     assert_eq!(manifest.shard_count, 7);
 }
+
+#[test]
+fn public_client_uses_the_default_endpoint() {
+    let fetcher = |_url: String| async move { Err::<String, FetchError>(FetchError::status(404)) };
+    let client = CatalogClient::public(fetcher).unwrap();
+    assert_eq!(client.base_url(), clampey::DEFAULT_BASE_URL);
+}

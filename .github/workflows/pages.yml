@@ -1,0 +1,13 @@
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pages:
+    uses: mlm-games/ci/.github/workflows/static-pages.yml@main
+    with:
+      path: catalog
+      require-file: manifest.json

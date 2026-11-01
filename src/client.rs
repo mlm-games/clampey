@@ -11,6 +11,9 @@ use crate::error::{Error, Result};
 use crate::model::{EngineConfig, HostsFile, Manifest, SearchResults, TagsFile};
 use crate::normalize::normalize_tag;
 
+/// Free public catalog endpoint served from this repository's Pages build.
+pub const DEFAULT_BASE_URL: &str = "https://mlm-games.github.io/clampey/";
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct FetchError {
     pub status: Option<u16>,
@@ -92,6 +95,11 @@ struct State {
 impl<F: Fetcher> CatalogClient<F> {
     pub fn new(fetcher: F, base_url: &str) -> Result<Self> {
         Self::with_config(fetcher, base_url, ClientConfig::default())
+    }
+
+    /// Client for the free public endpoint. No key, no account, no tracking.
+    pub fn public(fetcher: F) -> Result<Self> {
+        Self::new(fetcher, DEFAULT_BASE_URL)
     }
 
     pub fn with_config(fetcher: F, base_url: &str, config: ClientConfig) -> Result<Self> {

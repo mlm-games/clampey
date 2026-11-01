@@ -19,7 +19,7 @@ mod reqwest_fetcher;
 #[cfg(feature = "wasm")]
 mod wasm;
 
-pub use client::{CatalogClient, ClientConfig, FetchError, Fetcher};
+pub use client::{CatalogClient, ClientConfig, FetchError, Fetcher, DEFAULT_BASE_URL};
 pub use engine::{Engine, EngineStats, SearchPlan, FEATURED_QUERIES};
 pub use error::{Error, Result};
 pub use host::{host_of, HostSet};

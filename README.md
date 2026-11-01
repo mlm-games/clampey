@@ -24,6 +24,19 @@ Optional features:
 | `wasm`    | `wasm-bindgen` bindings                         |
 | `cli`     | the `clampey` binary                            |
 
+## Default endpoint
+
+`https://mlm-games.github.io/clampey/` is the free, key-less catalog endpoint published from this
+repository. It is a plain directory of JSON: `manifest.json`, `hosts.json`, `tags.json` and
+`shards/`. `CatalogClient::public(fetcher)` points at it.
+
+Any other static host works identically, so an app can expose a base-URL setting and never depend
+on that one server.
+
+```rust
+let client = CatalogClient::public(ReqwestFetcher::new()?)?;
+```
+
 ## Search a catalog over HTTP
 
 ```rust
